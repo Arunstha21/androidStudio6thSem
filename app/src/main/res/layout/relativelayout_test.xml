@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/purple_200"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="@string/login"/>
+
+    <TextView
+        android:id="@+id/textUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textLogin"
+        android:layout_alignBottom="@+id/edtUserName"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:text="@string/userName"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textLogin"
+        android:layout_toEndOf="@+id/textUserName"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/edtUserName"
+        />
+    <TextView
+        android:id="@+id/textPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textUserName"
+        android:layout_alignBottom="@+id/edtPassword"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:text="@string/password"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtUserName"
+        android:layout_toEndOf="@+id/textPassword"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/edtPassword"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtPassword"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/login"
+        />
+
+</RelativeLayout>

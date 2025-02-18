@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">firstApp</string>
+    <string name="userName">User Name</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="errorText">Field is required!!</string>
+    <string name="helloWorld">Hello World! Again again</string>
+
+    <string-array name="countries">
+        <item>Nepal</item>
+        <item>India</item>
+        <item>China</item>
+        <item>Bhutan</item>
+        <item>Bangladesh</item>
+        <item>USA</item>
+        <item>Mongolia</item>
+        <item>Pakistan</item>
+        <item>Hong Kong</item>
+        <item>Japan</item>
+    </string-array>
+</resources>
