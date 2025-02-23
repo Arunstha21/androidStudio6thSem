@@ -128,6 +128,14 @@ public class MainActivity extends AppCompatActivity {
             intent.putExtra("phone", 9815922);
             startActivity(intent);
 
+            Intent gridIntent = new Intent(this, activity_grid_view.class);
+            gridIntent.putExtra("userName", userName);
+            gridIntent.putExtra("password", password);
+            gridIntent.putExtra("phone", 9815922);
+            startActivity(gridIntent);
+
+
+
         }
     }
 

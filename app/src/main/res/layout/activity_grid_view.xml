@@ -5,23 +5,16 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".ListViewActivity">
-
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="0.5"
-        android:id="@+id/listView"
-        />
+    tools:context=".activity_grid_view">
 
     <GridView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/gridView"
+        android:id="@+id/gridViewA"
         android:layout_weight="0.5"
         android:numColumns="2"
         />
+
 
 
 </LinearLayout>

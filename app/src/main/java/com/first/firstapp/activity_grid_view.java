@@ -1,13 +1,8 @@
 package com.first.firstapp;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.view.accessibility.AccessibilityManager;
-import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,8 +13,8 @@ import androidx.core.view.WindowInsetsCompat;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ListViewActivity extends AppCompatActivity {
-    private ListView listView;
+public class activity_grid_view extends AppCompatActivity {
+
     private GridView gridView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,19 +36,8 @@ public class ListViewActivity extends AppCompatActivity {
             userDataList.add(new UserData("name"+i, "email"+i, i,i));
         }
 
-        listView = findViewById(R.id.listView);
-        gridView = findViewById(R.id.gridView);
+        gridView = findViewById(R.id.gridViewA);
         CustomListAdapter customListAdapter = new CustomListAdapter(userDataList);
-        listView.setAdapter(customListAdapter);
         gridView.setAdapter(customListAdapter);
-
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                UserData dataValues = userDataList.get(position);
-                Toast.makeText(getApplicationContext(), "Item Clicked "+dataValues.getEmail(), Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(getApplicationContext(), RecyclerViewActivity.class));
-            }
-        });
     }
 }

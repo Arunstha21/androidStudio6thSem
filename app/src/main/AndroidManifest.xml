@@ -13,6 +13,15 @@
         android:theme="@style/Theme.FirstApp"
         tools:targetApi="34">
         <activity
+            android:name=".RecyclerViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".recycleViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity_grid_view"
+            android:exported="false" />
+        <activity
             android:name=".ListViewActivity"
             android:exported="false" />
         <activity
